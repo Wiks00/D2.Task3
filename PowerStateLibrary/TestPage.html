@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>My Com Component</title>
+    <object id="myComComponent" name="myComComponent"
+            <!--Work only in IE !-->
+            classid="clsid:AA8CECE2-4AF9-4410-962B-27BBC9884522"></object>
+    <script language="javascript" type="text/javascript">
+        function myButton_click() {
+            var returnCode = myComComponent.GetLastWakeTime();
+        }
+    </script>
+</head>
+    <body>
+        <h1>My Com Component</h1>
+        <table>
+            <tr>
+                <td>
+                    <button id="myButton" onclick="myButton_click();">Com Method</button>
+                    <label>Args</label>
+                    <textarea id="myArgs" rows="1" cols="16">Hello World!</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea id="myTextBox" rows="10" cols="80"></textarea>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
